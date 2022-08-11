@@ -1,0 +1,27 @@
+#Q1/Write a method that will remove any given character from a String?
+disease = str(input("Enter the patent disease type:"))
+change_name = "cad"
+for name in change_name:
+  disease = disease.replace(name,"Coronary Artery Disease")
+print(disease)
+
+
+#Q2/Write a program to find all prime numbers up to a given range of numbers?
+first = int(input("Enter where your range begin : "))
+end = int(input("Enter where your range ends : "))
+for n in range(first,end + 1):
+   if n > 1:
+       for i in range(2,n):
+           if (n % i) == 0:
+               break
+       else:
+           print(n)
+          
+#Q3/write a function that count how many the given character repeated in a given string?         
+sentence = str(input("Enter a sentence: "))
+letter = str(input("Which letter you want to check: "))
+count = 0
+for i in sentence:
+     if i == letter:
+                 count = count + 1
+print("The Letter " + str(letter) + " is repeated " + str(count) +" times")
